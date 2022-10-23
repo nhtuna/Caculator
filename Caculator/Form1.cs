@@ -17,9 +17,13 @@ namespace Caculator
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            double c = a + b;
+            textBox3.Text = c.ToString();
         }
     }
 }
